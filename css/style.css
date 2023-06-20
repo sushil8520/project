@@ -1,0 +1,223 @@
+@font-face{
+    font-family:;
+}
+body{
+    /* background: red; */
+}
+:root{
+    --primary:#EFBF00;
+    --secondary:#232B38;
+    --ternary:#6C6C6C;
+    --danger:#FE4545;
+    --pure:#FEFEFE;
+    --light:#F0F0F0;
+    --heaven:#FFFFFF;
+    --footer:#2d333f;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+@media(min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+header.topbar{
+    background: var(--secondary);
+    color: var(--pure);
+    padding: 0.75rem 0;
+}
+/* space between icon */
+header.topbar .icon a{
+    margin-right: 0.6rem ;
+}
+/* space between in navbar images */
+header.topbar .auth > div img{
+ margin-right: 0.2rem;
+
+}
+
+/* space between icon and patch */
+header.topbar .auth .divider{
+    padding: 0 1rem;
+}
+header .topbar .auth > div  a{
+    color: var(--pure);
+    text-decoration: none;
+}
+header.topbar .container{
+   
+}
+
+header.topbar .container .auth{
+    
+}
+/* . classes below utility () utility classses */
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.items-align{
+    align-items: center;
+}
+nav .top{
+    padding: 1.1rem 0;
+}
+nav.top.contact img{
+    margin-right: 2rem;
+}
+.justify-center{
+    justify-content: center;
+}
+nav .navbar a{
+    text-decoration: none;
+    justify-content: center;
+    color: var(--secondary);
+    font-size: .9rem;
+    padding: 1rem;
+    transition: 1.33s ease;
+}
+nav .navbar a.active{
+    background: var(--primary);
+    color: var(--pure);
+}
+nav .navbar a:hover{
+    background: var(--primary);
+    color: var(--pure);
+
+}
+/* utility class for background shadow to our home aboutus etc */
+.magic-shadow{
+    position: relative;
+    background: var(--heaven);
+}
+.magic-shadow:after{
+    content:'' ;
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url(../icons/shadow-sm.svg);
+    position: absolute;
+    bottom: -30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+/* HEADER PART STARTS */
+header.hero{
+    background-image: url(../images/hero.png);
+    height: 400px;
+    background-image: no-repeat;
+    background-position:0% 0% ;
+    overflow: hidden;
+    position: relative;
+}
+header.hero .container{
+    /* we want straw image in header.container then we use position in relative  */
+    
+}
+header.hero .welcome span{
+    color: var(--secondary);
+    margin: 0.75rem;
+}
+header.hero .welcome {
+    margin: 0.5rem;
+}
+
+header.hero h1{
+    color: var(--secondary);
+    margin: 0.25rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header.hero h1 span{
+    color: var(--primary);
+}
+header.hero p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 50%;
+    margin-bottom:1rem;
+    line-height: 1.5;
+}
+
+/* styling buttons overall using utility classes to all the button */
+.btn{
+    border-radius: 4px;
+    padding: 0.50rem 0.75rem;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .9s ease;
+}
+/* utility classes for button */
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--heaven);
+}
+.btn-primary:hover{
+    background-color: var(--danger);
+    color: var(--heaven);
+}
+.btn-secondary{
+    background-color: var(--secondary);
+    color: var(--heaven);
+}
+
+.btn-secondary:hover{
+    background-color: var(--danger);
+    color: var(--heaven);
+}
+
+/* for image straw image in header part */
+header.hero .hero-image{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* SECTION PART STARTS */
+section.top-products{
+    align-items: center;
+    display: flex right;
+    color: var(--danger);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+section.top-products .carousel-item > div p{
+    color: var(--primary);
+    background-color: var(--light);
+    margin-bottom: 20px;
+    line-height: 2rem;
+}
+
+section.top-products .carousel-item > div h5{
+    color: var(--footer);
+    background-color: var(--primary);
+    margin-bottom: -1px;
+    line-height: 2rem;
+}
+section.our-services{
+    background-color: var(--light);
+}
+section.our-services .service-card{
+    background: var(--pure);
+    text-align: center;
+    padding: 2rem;
+
+}
+.text-primary{
+    color: var(--primary);
+}
